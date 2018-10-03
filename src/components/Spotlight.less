@@ -1,0 +1,67 @@
+.comp-spotlight {
+
+  .base-dialog__body {
+    padding: 10px 20px 20px;
+    position: relative;
+    max-height: 500px;
+    &:before,
+    &:after {
+      content: ' ';
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  &.no-fields {
+    .base-dialog__header {
+      padding-bottom: 20px;
+    }
+    .base-dialog__body {
+      padding: 0;
+    }
+  }
+
+  &__fields {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    min-height: 136px;
+    max-height: 500px;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-right: 1px solid #dcdfe6;
+    &__item {
+      list-style: none;
+      line-height: 36px;
+      margin: 0;
+      font-size: 14px;
+      color: #606266;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      &:hover,
+      &.active {
+        background-color: #ecf5ff;
+        color: #66b1ff;
+      }
+    }
+  }
+  &__field-render {
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    padding-left: 20px;
+    h4 {
+      user-select: none;
+      text-align: center;
+      margin: 10px 0;
+    }
+    &__button-group {
+      text-align: center;
+      padding: 10px 0 0;
+    }
+  }
+}

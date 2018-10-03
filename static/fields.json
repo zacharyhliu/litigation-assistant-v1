@@ -1,0 +1,147 @@
+{
+  "name": "Fields Setting",
+  "descriptions": "Fields Setting",
+  "fields": [
+    "case_number",
+    "verdict_date",
+    {
+      "plaintiff[]": {
+        "fields": [
+          "name",
+          "name_id",
+          "type",
+          "address",
+          {
+            "representative[]": {
+              "fields": [
+                "name",
+                "type"
+              ]
+            }
+          },
+          {
+            "agent[]": {
+              "fields": [
+                "name",
+                "name_id",
+                "company",
+                "type"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "defendant[]": {
+        "fields": [
+          "name",
+          "name_id",
+          "type",
+          "address",
+          {
+            "representative[]": {
+              "fields": [
+                "name",
+                "type"
+              ]
+            }
+          },
+          {
+            "agent[]": {
+              "fields": [
+                "name",
+                "name_id",
+                "company",
+                "type"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "third_party[]": {
+        "fields": [
+          "name",
+          "name_id",
+          "type",
+          "address",
+          {
+            "representative[]": {
+              "fields": [
+                "name",
+                "type"
+              ]
+            }
+          },
+          {
+            "agent[]": {
+              "fields": [
+                "name",
+                "name_id",
+                "company",
+                "type"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "filing_date",
+    "courting_date",
+    "related_litigation[]",
+    "citation_litigation[]",
+    "apno[]",
+    "citation_patent[]",
+    "product[]",
+    "related_appeal[]",
+    "dispute_focus",
+    "judgement_point[]",
+    "legal_ground[]",
+    "verdict_result",
+    "outcome_of_court_judgement",
+    "amount_plaintiff",
+    "damages_amount_plaintiff",
+    "cost_amount_plaintiff",
+    "amount_court",
+    "damages_amount_court",
+    "cost_amount_court",
+    {
+      "amount_calculate": {
+        "choices": [
+          "按被侵权方损失确定",
+          "按侵权方获益确定",
+          "按专利许可使用费合理倍数确定",
+          "酌情确定金额"
+        ]
+      }
+    },
+    {
+      "outcome_type": {
+        "choices": [
+          "撤回起诉",
+          "停止侵权，损害赔偿",
+          "驳回上诉，维持原判",
+          "驳回上诉，维持原裁定",
+          "损害赔偿",
+          "撤回上诉",
+          "驳回诉讼请求",
+          "停止侵权、损害赔偿",
+          "驳回起诉",
+          "准许撤诉",
+          "达成调解协议",
+          "证据保全",
+          "驳回管辖权异议",
+          "驳回再审申请",
+          "无执行财产，终结本次执行",
+          "按自动撤回上诉处理",
+          "按自动撤诉处理",
+          "按撤诉处理",
+          "中止诉讼",
+          "驳回再审"
+        ]
+      }
+    }
+  ]
+}

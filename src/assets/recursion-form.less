@@ -1,0 +1,54 @@
+@import './mixin-clearfix.less';
+
+@label-width: 80px;
+
+.recursion-form {
+  box-sizing: border-box;
+  padding: 10px;
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  .form-item {
+    position: relative;
+    margin-bottom: 5px;
+    .clearfix();
+    &__label {
+      float: left;
+      margin-right: 10px;
+      width: @label-width;
+      overflow: hidden;
+      font-size: 12px;
+    }
+    &__content {
+      float: left;
+      left: @label-width;
+      width: ~'calc(100% - @{label-width} - 10px)';
+    }
+  }
+}
+
+.form-item-array-item {
+  .clearfix();
+  border: solid 1px transparent;
+  border-bottom: dotted 1px #666;
+  &:last-child {
+    border-bottom: dotted 1px transparent;
+  }
+  padding: 5px;
+  margin: 5px 0;
+  &:hover {
+    border: dotted 1px #555;
+  }
+  &__actions,
+  &__content {
+    float: left;
+  }
+  &__actions {
+    width: 120px;
+    text-align: right;
+  }
+  &__content {
+    width: ~'calc(100% - 120px)';
+  }
+}
