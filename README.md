@@ -1,9 +1,9 @@
 # litigation-assistant
 
-> litigation 小助力
+> litigation assistant
 
 ## Build Setup
-
+Author: Zachary Liu
 ``` bash
 # install dependencies
 npm install
