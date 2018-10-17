@@ -1,6 +1,7 @@
 # litigation-assistant
 
 > litigation assistant
+Tool to help move litigation data into json forms
 
 ## Build Setup
 Author: Zachary Liu
